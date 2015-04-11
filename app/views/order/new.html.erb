@@ -1,6 +1,6 @@
 <% provide(:title, 'Menu') %>
 
-
+<%= render 'shared/header' %>
 
 <div class="container" style="margin-top:30px;">
 	<div class="row form-group">
@@ -17,8 +17,8 @@
                     <p>Whether you want to build muscle or get conditioned for your next athletic event, this meal plan is what you're looking for. The protein and complex carbohydrate-rich foods will fuel your workouts.</p>
                 </div>
                 <div class="panel-footer text-center">
-                	 <%= button_to 'Order', order_index_path(mealplan: "athlete"), :class=> 'btn btn-warning', :role=> 'button', :style=> 'color: white; font-family: Arial' %>
-                    <a href="/order/athlete" class="btn btn-warning btn-lg" role="button" style="color: white; font-family: Arial">Get information</a>
+                	 <%= button_to 'Order', order_index_path(name: "athlete"), :class=> 'btn btn-warning', :role=> 'button', :style=> 'color: white; font-family: Arial' %>
+                    
                 </div>
             </div>
         </div>
@@ -37,8 +37,8 @@
                     <p>Go about your busy day without having to worry about your diet and eating clean. We came up with the healthy living meal plan to provide the fuel that busy college students need.</p>
                 </div>
                 <div class="panel-footer text-center">
-                	  <%= button_to 'Order', order_index_path(mealplan: "healthy"), :class=> 'btn btn-warning', :role=> 'button', :style=> 'color: white; font-family: Arial' %>
-                    <a href="/order/healthyliving" class="btn btn-warning btn-lg" role="button" style="color: white; font-family: Arial">Get information</a>
+                	  <%= button_to 'Order', order_index_path(name: "healthy"), :class=> 'btn btn-warning', :role=> 'button', :style=> 'color: white; font-family: Arial' %>
+                    
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@
                 </div>
                 <div class="panel-footer text-center">
                 	 <%= button_to 'Order', order_index_path(name: "homestyle"), :class=> 'btn btn-warning', :role=> 'button', :style=> 'color: white; font-family: Arial' %>
-                    <a href="/order/homestyle" class="btn btn-warning btn-lg" role="button" style="color: white; font-family: Arial">Get information</a>
+                    
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@
                 </div>
                 <div class="panel-footer text-center">
                 	 <%= button_to 'Order', order_index_path(name: "budget"), :class=> 'btn btn-warning', :role=> 'button', :style=> 'color: white; font-family: Arial' %>
-                    <a href="/order/budget" class="btn btn-warning btn-lg" role="button" style="color: white; font-family: Arial">Get information</a>
+                    
                 </div>
             </div>
         </div>
@@ -105,8 +105,8 @@
                     <p>Vegetarians and Vegans, look no further. This meal plan was designed specifically for you and delivers variety and quality.</p>
                 </div>
                 <div class="panel-footer text-center">
-                	  <%= button_to 'Order', order_index_path(mealplan: "vegetarian"), :class=> 'btn btn-warning', :role=> 'button', :style=> 'color: white; font-family: Arial' %>
-                    <a href="/order/vegetarian" class="btn btn-warning btn-lg" role="button" style="color: white; font-family: Arial">Get information</a>
+                	  <%= button_to 'Order', order_index_path(name: "vegetarian"), :class=> 'btn btn-warning', :role=> 'button', :style=> 'color: white; font-family: Arial' %>
+                    
                 </div>
             </div>
         </div>
